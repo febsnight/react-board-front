@@ -1,0 +1,42 @@
+# node_modules 폴더 (의존성 패키지)
+node_modules/
+
+# 빌드 결과 폴더
+build/
+
+# 번들러 출력 폴더 (예: Parcel, Webpack)
+dist/
+out/
+
+# IDE 관련 파일 (예: .idea/, .vscode/)
+.idea/
+.vscode/
+
+# 운영체제 관련 파일
+.DS_Store
+Thumbs.db
+
+# 환경 변수 파일
+.env
+.env.local
+.env.development
+.env.production
+
+# 로그 파일
+*.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# 임시 파일
+*.tmp
+*~
+
+# 캐시 파일
+.cache/
+
+# 테스트 결과
+coverage/
+
+# 기타 (필요에 따라 추가)
+/public/static

@@ -1,0 +1,40 @@
+const top3BoardListMock = [
+    {
+        "boardNumber": 1,
+        "title": "오늘 점심 뭐먹지 맛있는 거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지 맛있는 거 먹고 싶은데",
+        "content": "오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 나 점심때 오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 오늘 점심을 뭐먹을 지 너무 고민이 되는 오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 나 점심때 ...",
+        "boardTitleImage": 'https://plus.unsplash.com/premium_photo-1672743593121-ddc2fee0e62b?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        "favoriteCount": 0,
+        "commentCount": 0,
+        "viewCount": 0,
+        "writeDatetime": "2023.08.18. 00:54:27",
+        "writerNickname": "안녕하세요나는주코야키",
+        "writerProfileImage": 'https://images.unsplash.com/photo-1743090834072-4f70339bc917?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      },
+      {
+        "boardNumber": 2,
+        "title": "오늘 점심 뭐먹지 맛있는 거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지 맛있는 거 먹고 싶은데",
+        "content": "오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 나 점심때 오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 오늘 점심을 뭐먹을 지 너무 고민이 되는 오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 나 점심때 ...",
+        "boardTitleImage": null,
+        "favoriteCount": 0,
+        "commentCount": 0,
+        "viewCount": 0,
+        "writeDatetime": "2023.08.18. 00:54:27",
+        "writerNickname": "안녕하세요나는주코야키",
+        "writerProfileImage": null,
+      },
+      {
+        "boardNumber": 3,
+        "title": "오늘 점심 뭐먹지 맛있는 거 먹고 싶은데 추천 부탁 오늘 점심 뭐먹지 맛있는 거 먹고 싶은데",
+        "content": "오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 나 점심때 오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 오늘 점심을 뭐먹을 지 너무 고민이 되는 오늘 점심을 뭐먹을 지 너무 고민이 되는 데 뭐 먹을까? 나 점심때 ...",
+        "boardTitleImage": null,
+        "favoriteCount": 0,
+        "commentCount": 0,
+        "viewCount": 0,
+        "writeDatetime": "2023.08.18. 00:54:27",
+        "writerNickname": "안녕하세요나는주코야키",
+        "writerProfileImage": null,
+      },
+]
+
+export default top3BoardListMock;
