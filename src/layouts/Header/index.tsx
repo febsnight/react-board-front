@@ -10,13 +10,10 @@ function Header() {
 
   // state: path 상태
   const { pathname } = useLocation();
-
   //  state: 로그인 유저 상태
   const { loginUser, setLoginUser, resetLoginUser } = useLoginUserStore();
-
   //  state: cookie 상태
   const [cookies, setCookies] = useCookies();
-
   //  state: 로그인 상태
   const [isLogin, setIsLogin] = useState<boolean>(false);
 
@@ -105,12 +102,13 @@ function Header() {
     const onMyPageButtonClickHandler = () => {
       if (!loginUser) return;
       const { email } = loginUser;
-      navigate(USER_PATH(''));
+      navigate(USER_PATH(email));
     }
 
     //  event handler: 로그아웃 버튼 클릭 이벤트 처리 함수
     const onSignOutButtonClickHandler = () => {
       resetLoginUser();
+      setCookies('accessToken', '', { path: MAIN_PATH(), expires: new Date() });
       navigate(MAIN_PATH());
     }
 
@@ -120,7 +118,7 @@ function Header() {
     }
 
     if (isLogin && userEmail === loginUser?.email) {
-      return <div className='white-button' onClick={onSignOutButtonClickHandler}>{'로그아웃'}</div>
+      return <div className='black-button' onClick={onSignOutButtonClickHandler}>{'로그아웃'}</div>
     }
 
     if (isLogin) {
@@ -150,6 +148,12 @@ function Header() {
     return <div className='disable-button' onClick={onUploadButtonClickHandler}>{'업로드'}</div>
   }
 
+  useEffect(() => {
+    setIsLogin(loginUser !== null);
+
+  }, [loginUser])
+
+  //  render: 헤더 레이아웃 렌더링
   return (
     <div id='header'>
       <div className='header-container'>
